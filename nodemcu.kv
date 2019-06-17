@@ -1,0 +1,33 @@
+#:kivy 1.11.0
+<Application>:
+
+    temp: temp
+    hum: hum
+    status: status
+
+    GridLayout:
+        cols: 1
+        spacing: 10
+        Label:
+            id: status
+            text: "Ready"
+            color: 0,1,0,1
+        GridLayout:
+            cols: 2
+            spacing: 5
+            Label:
+                text: "Temperature"
+            TextInput:
+                id: temp
+                readonly: True
+                text: "N/A"
+            Label:
+                text: "Humidity"
+            TextInput:
+                id: hum
+                readonly: True
+                text: "N/A"
+        Button:
+            text: "Gather data"
+            on_press: root.gather_data()
+
