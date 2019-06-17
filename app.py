@@ -17,7 +17,7 @@ MQTT_BROKER = "192.168.0.254"
 SUB_TOPIC = "esp/response"
 PUB_TOPIC = "esp/request"
 
-Window.size = (400, 180)
+Window.size = (320, 240)
 
 
 class Application(BoxLayout):
